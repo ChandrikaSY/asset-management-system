@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="container">
+    <h1>Admin Dashboard</h1>
+
+    <div class="card">
+        <p>Total Employees: {{ employees }}</p>
+        <p>Total Assets: {{ assets }}</p>
+        <p>Total Assigned: {{ assigned }}</p>
+    </div>
+</div>

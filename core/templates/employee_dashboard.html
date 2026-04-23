@@ -1,0 +1,21 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="container">
+    <h1>My Assets</h1>
+
+    <table>
+        <tr>
+            <th>Asset</th>
+            <th>Date</th>
+        </tr>
+
+        {% for a in assignments %}
+        <tr>
+            <td>{{ a.asset.name }}</td>
+            <td>{{ a.assigned_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

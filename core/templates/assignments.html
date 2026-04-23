@@ -1,0 +1,19 @@
+<h1>Assignments</h1>
+
+<a href="/">← Back to Dashboard</a>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Asset</th>
+        <th>Employee</th>
+        <th>Date</th>
+    </tr>
+
+    {% for a in assignments %}
+    <tr>
+        <td>{{ a.asset.name }}</td>
+        <td>{{ a.employee.name }}</td>
+        <td>{{ a.assigned_date }}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,34 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="navbar">
+    <h1>Asset Manager</h1>
+    <div>
+        <a href="#">Dashboard</a>
+        <a href="#">Assets</a>
+        <a href="#">Employees</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Employees</h3>
+            <h2>{{ employees }}</h2>
+        </div>
+
+        <div class="card">
+            <h3>Total Assets</h3>
+            <h2>{{ assets }}</h2>
+        </div>
+
+        <div class="card">
+            <h3>Assigned Assets</h3>
+            <h2>{{ assigned }}</h2>
+        </div>
+    </div>
+
+    <a class="btn" href="#">View Assignments</a>
+</div>

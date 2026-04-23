@@ -1,0 +1,52 @@
+PROJECT NAME: Asset Management System
+
+--------------------------------------------------
+
+1. UNDERSTANDING OF CLIENT REQUIREMENT:
+
+The client wants a system to track company assets and identify which asset is assigned to which employee. The system supports a large organization with role-based access where admins manage assets and employees view their assigned assets.
+
+--------------------------------------------------
+
+2. CREATIVE FREEDOMS TAKEN:
+
+- Dual-interface system (Admin + Employee)
+- Dashboard UI design
+- Dark theme styling
+- Simplified asset tracking logic
+- Django framework used
+
+--------------------------------------------------
+
+3. ASSUMPTIONS:
+
+- One asset assigned to one employee at a time
+- Admin has full control
+- Employees only view assigned assets
+- No return system yet
+- Email is unique for employees
+
+--------------------------------------------------
+
+4. FEATURES:
+
+- Admin Login
+- Employee Login
+- Dashboard (counts of employees/assets)
+- Employee Management
+- Asset Management
+- Asset Assignment
+- Role-Based Access
+- Clean UI
+
+--------------------------------------------------
+
+5. QUESTIONS FOR CLIENT:
+
+- Need asset return system?
+- Need history tracking?
+- Need notifications?
+- Need reports/analytics?
+- Need multiple admin roles?
+
+--------------------------------------------------

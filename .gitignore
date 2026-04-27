@@ -14,3 +14,8 @@ env/
 
 # Environment variables
 .env
+
+staticfiles/
+db.sqlite3
+__pycache__/
+*.pyc

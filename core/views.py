@@ -1,6 +1,12 @@
 from django.shortcuts import render, redirect
 from .models import Employee, Asset, Assignment
 
+from django.contrib.auth.models import User
+
+# Create admin automatically (runs once)
+if not User.objects.filter(username="admin").exists():
+    User.objects.create_superuser("admin", "admin@gmail.com", "Admin@123")
+    
 def login_view(request):
     if request.method == 'POST':
         email = request.POST['email']
